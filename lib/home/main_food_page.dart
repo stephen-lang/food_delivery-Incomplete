@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/Widgets/BigText.dart';
 import 'package:food_delivery/Widgets/SmallText.dart';
+import 'package:food_delivery/home/food_page_body.dart';
 
 import 'package:food_delivery/utils/Colors.dart';
 
@@ -15,11 +16,11 @@ class _MainfoodPageState extends State<MainfoodPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        padding: const EdgeInsets.fromLTRB(15, 50, 15, 0),
-        child: Column(
-          children: [
-            Row(
+      body: Column(
+        children: [
+          Container(
+            margin: const EdgeInsets.fromLTRB(5, 30, 5, 0),
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
@@ -59,8 +60,9 @@ class _MainfoodPageState extends State<MainfoodPage> {
                 ),
               ],
             ),
-          ],
-        ),
+          ),
+          const FoodPageBody(),
+        ],
       ),
     );
   }
