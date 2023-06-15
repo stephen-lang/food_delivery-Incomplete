@@ -19,7 +19,7 @@ class _MainfoodPageState extends State<MainfoodPage> {
       body: Column(
         children: [
           Container(
-            margin: const EdgeInsets.fromLTRB(5, 30, 5, 0),
+            margin: const EdgeInsets.fromLTRB(10, 30, 5, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -28,13 +28,13 @@ class _MainfoodPageState extends State<MainfoodPage> {
                     BigText(
                         text: 'Bangladesh',
                         colors: AppColors.mainColor,
-                        size: 50,
+                        size: 15,
                         textOverflow: TextOverflow.ellipsis),
                     Row(
                       children: [
                         SmallText(
                             text: 'Accra',
-                            size: 50,
+                            size: 15,
                             textOverflow: TextOverflow.ellipsis),
                         const Icon(
                           IconData(0xe098, fontFamily: 'MaterialIcons'),

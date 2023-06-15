@@ -6,14 +6,14 @@ import 'package:flutter/widgets.dart';
 class SmallText extends StatelessWidget {
   final String text;
   Color? colors;
-  final int size;
+  final double size;
   final TextOverflow textOverflow;
 
   SmallText(
       {Key? key,
       required this.text,
       this.colors = const Color(0XFF332d2b),
-      required this.size,
+      this.size = 40,
       required this.textOverflow})
       : super(key: key);
 
@@ -23,10 +23,10 @@ class SmallText extends StatelessWidget {
       text,
       overflow: textOverflow,
       style: TextStyle(
-        color: colors,
-        fontWeight: FontWeight.w400,
-        fontFamily: 'Roboto-Bold',
-      ),
+          color: colors,
+          fontWeight: FontWeight.w400,
+          fontFamily: 'Roboto-Bold',
+          fontSize: size),
     );
   }
 }
